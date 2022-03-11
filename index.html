@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<style>
+		.cube {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.cube2 {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.cube3 {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}
+		.cube4 {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}	
+		.cube5 {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}	
+		.cube6 {
+			width: 500px;
+			height: 300px;
+			position: absolute;
+			transition: 1s;
+		}		
+	</style>
+	<div style="background-color: black; height: 900px; width: 1865px;">
+	<div style="background-image: url(bg2.jpg); height: 900px; width: 1865px; background-size: 100% 100%; visibility: visible;" class="g">
+		<h2 style="margin-left: 885px; font-family: impact">Попытки:
+			<span class="score"></span>
+		</h2>
+
+		<button class="qwe" style="margin-left: 890px; font-family: arial black">перемешать</button>
+		<div>
+			<img src="1.jpg" class="cube" style="left: 40px; top: 100px;">
+		</div>
+		<div>
+			<img src="2.jpg" class="cube2" style="left: 690px; top: 100px;">
+		</div>
+		<div>
+			<img src="3.jpg" class="cube3" style="left: 1340px; top: 100px;">
+		</div>
+
+		<div>
+			<img src="4.jpg" class="cube4" style="left: 1340px; top: 500px;">
+		</div>
+		<div>
+			<img src="5.jpg" class="cube5" style="left: 40px; top: 500px;">
+		</div>
+		<div>
+			<img src="6.jpg" class="cube6" style="left: 690px; top: 500px;">
+		</div>
+			<h2 style="margin-top: 780px; margin-left: 800px; font-family: impact;">Найти: грустного кота((💦</h2>
+	</div>
+	</div>
+
+
+	<script>
+		let score = 3;
+		document.querySelector(".score").innerHTML = score;
+
+
+
+		document.querySelector(".qwe").onclick = function(){
+
+			document.querySelector(".cube").style.left = "1340px";
+			document.querySelector(".cube").style.top = "500px";
+			document.querySelector(".cube").src = "bl.png";
+
+			document.querySelector(".cube3").style.left = "690px";
+			document.querySelector(".cube3").style.top = "500px";
+			document.querySelector(".cube3").src = "bl.png";
+
+			document.querySelector(".cube2").style.left = "1340px";
+			document.querySelector(".cube2").src = "bl.png";
+
+			document.querySelector(".cube4").style.left = "690px";
+			document.querySelector(".cube4").style.top = "100px";
+			document.querySelector(".cube4").src = "bl.png";
+
+			document.querySelector(".cube6").style.left = "40px";
+			document.querySelector(".cube6").src = "bl.png";
+
+			document.querySelector(".cube5").style.top = "100px";
+			document.querySelector(".cube5").src = "bl.png";
+
+		}
+
+		document.querySelector(".cube").onclick = function(){
+			document.querySelector(".cube").src = "1.jpg";
+			document.querySelector(".score").innerHTML = score;
+			score = score - 1;	
+			alert("не тот кот");	
+				if(score < 0){
+			alert("лол ты проиграл)💀");
+		}
+		}
+		
+		document.querySelector(".cube2").onclick = function(){
+			document.querySelector(".cube2").src = "2.jpg";
+			document.querySelector(".score").innerHTML = score;
+			score = score - 1;	
+			alert("не тот кот");	
+				if(score < 0){
+			alert("лол ты проиграл)💀");
+		}
+		}
+
+		document.querySelector(".cube3").onclick = function(){
+			document.querySelector(".cube3").src = "3.jpg";
+			document.querySelector(".score").innerHTML = score;
+			score = score - 1;	
+			alert("не тот кот");	
+				if(score < 0){
+			alert("лол ты проиграл)💀");
+		}
+		}
+
+		document.querySelector(".cube4").onclick = function(){
+			document.querySelector(".cube4").src = "4.jpg";
+			document.querySelector(".score").innerHTML = score;
+			score = score - 1;	
+			alert("не тот кот");	
+				if(score < 0){
+			alert("лол ты проиграл)💀");
+		}
+		}
+
+		document.querySelector(".cube5").onclick = function(){
+			document.querySelector(".cube5").src = "5.jpg";
+			alert("ты его нашел(");
+			alert("🎊ю вин зис гэйм🎉");
+		}
+
+		document.querySelector(".cube6").onclick = function(){
+			document.querySelector(".cube6").src = "6.jpg";
+			document.querySelector(".score").innerHTML = score;
+			score = score - 1;	
+			alert("не тот кот");	
+				if(score < 0){
+			alert("лол ты проиграл)💀");
+		}
+		}
+	</script>
+</body>
+</html>
